@@ -1,9 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import laligalogo from "../assets/img/laligalogo.png";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 export const Footer = () => {
   return (
@@ -12,15 +11,21 @@ export const Footer = () => {
         <Row className="align-items-center">
           <MailchimpForm />
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <img src={laligalogo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            <a href="https://www.instagram.com/laliga_tdv/">
+              <i className="bi bi-instagram text-light"></i> 
+              </a>
+              <a href="https://www.tiktok.com/@laliga_del_oeste_voley?lang=es">
+              <i className="bi bi-tiktok text-light"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=541166581704&text=Hola%20Liga%20del%20Oeste!%20%F0%9F%8F%90%20">
+              <i className="bi bi-whatsapp text-light"></i>
+              </a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2024. Todos los derechos reservados</p>
           </Col>
         </Row>
       </Container>
