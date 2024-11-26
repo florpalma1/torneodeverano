@@ -1,44 +1,47 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import diecisietevoley from "../assets/img/diecisietevoley.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+/*Agregas a las cards fotos del escudo de cada equipo, nombre y descripcion
+la ultima card lleva a una pagina que muestra el listado de todas las cards de cada equipo
+Cada equipo debera tener su propia pagina indicando:
+datos, lista de jugadores, participaciones, fechas de proximos partidos*/
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "17 voley",
+      description: "17 voley femenino",
+      imgUrl:diecisietevoley,
+    },
+    {
+      title: "Auchi",
+      description: "otro equipo",
+      imgUrl: diecisietevoley,
+    },
+    {
+      title: "otro equipo",
+      description: "otro equipo",
+      imgUrl: diecisietevoley,
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      description: "otro equipo",
+      imgUrl: diecisietevoley,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "otro equipo",
+      description: "otro equipo",
+      imgUrl: diecisietevoley,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Mas equipos",
+      description: "Conoce todos los equipos que estan participando del torneo de verano",
+      imgUrl: diecisietevoley,
     },
   ];
 
