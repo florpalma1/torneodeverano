@@ -8,7 +8,8 @@ import TrackVisibility from 'react-on-screen';
 /*Agregas a las cards fotos del escudo de cada equipo, nombre y descripcion
 la ultima card lleva a una pagina que muestra el listado de todas las cards de cada equipo
 Cada equipo debera tener su propia pagina indicando:
-datos, lista de jugadores, participaciones, fechas de proximos partidos*/
+datos, lista de jugadores, participaciones, fechas de proximos partidos
+Capaz puedo repetir la seccion de projects(equipos) para cada division, quedando dos apartados por seccion, femenino y masculino*/
 
 export const Projects = () => {
 
@@ -64,8 +65,12 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Femenino</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Maxivoley</Nav.Link>
+                      <Nav.Link eventKey="third">Mixto</Nav.Link>
                     </Nav.Item>
+                    {/* agregar un item mas para la division de sub 18 agrupando femenino y masculino juntos
+                     <Nav.Item>
+                      <Nav.Link eventKey="third">Mixto</Nav.Link>
+                    </Nav.Item>*/}
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
@@ -83,11 +88,17 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
+                      {/*aca debera ir las cards de mayores masculino, reemplazando el texto*/}
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
+                                {/*aca debera ir las cards de mixto, reemplazando el texto*/}
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
+                    {/* Aca tengo que agregar una nueva seccion igual a las anteriores, para el listado de cards de la division sub18
+                    <Tab.Pane eventKey="third">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    </Tab.Pane>*/}
                   </Tab.Content>
                 </Tab.Container>
               </div>}
