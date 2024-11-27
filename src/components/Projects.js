@@ -1,6 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import diecisietevoley from "../assets/img/diecisietevoley.png";
+import AUCHI from "../assets/img/AUCHI.png";
+import diecisietevoley from '../assets/img/diecisietevoley.png'
+import sportivohaedo from '../assets/img/SPORTIVO HAEDO.png'
+import elrejunte from '../assets/img/EL REJUNTE.png'
+import federal from '../assets/img/FEDERAL.png'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -16,28 +20,28 @@ export const Projects = () => {
   const projects = [
     {
       title: "17 voley",
-      description: "17 voley femenino",
-      imgUrl:diecisietevoley,
+      description: "DESCRIPCION",
+      imgUrl: diecisietevoley,
     },
     {
       title: "Auchi",
       description: "otro equipo",
-      imgUrl: diecisietevoley,
+      imgUrl: AUCHI,
     },
     {
-      title: "otro equipo",
+      title: "Sportivo Haedo",
       description: "otro equipo",
-      imgUrl: diecisietevoley,
+      imgUrl: sportivohaedo,
     },
     {
-      title: "Business Startup",
+      title: "El Rejunte",
       description: "otro equipo",
-      imgUrl: diecisietevoley,
+      imgUrl: elrejunte,
     },
     {
-      title: "otro equipo",
+      title: "El Rejunte",
       description: "otro equipo",
-      imgUrl: diecisietevoley,
+      imgUrl: federal,
     },
     {
       title: "Mas equipos",
