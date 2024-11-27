@@ -254,7 +254,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, #1dbebe -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -353,15 +353,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 70px 0;
   position: relative;
   background-color: black;
 }
 .project h2 {
-	font-size: 45px;
+	font-size: 60px;
 	font-weight: 700;
   text-align: center;
 }
+.project h3 {
+	font-size: 30px;
+	font-weight: 700;
+  text-align: center;
+}
+
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -372,35 +378,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
+  display: flex; /* Flexbox para distribución uniforme */
+  justify-content: space-between; /* Opcional: ajusta la separación */
 }
+
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  flex: 1; /* Los items ocuparán el mismo ancho */
+  text-align: center;
 }
+
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
   color: #fff;
-  width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
   transition: 0.3s ease-in-out;
-  text-align: center;
   z-index: 0;
+  display: block; /* Asegura que ocupe todo el ancho */
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg,  #1dbebe -5.91%, #4A2FBD 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -419,20 +429,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+
+  /* Tamaño ajustado */
+  width: 300px; /* Ajusta según el tamaño deseado */
+  height: 300px; /* Ajusta según la proporción deseada */
+
+  /* Opcional: centra la tarjeta si es necesario */
+  margin: 0 auto 24px auto;
 }
+
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #1dbebe  -5.91%,  #3839fa  111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -479,7 +495,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg,  #1dbebe -5.91%,  #3839fa  111.5811%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -581,7 +597,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg,  #1dbebe -5.91%, #4A2FBD 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -610,7 +626,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg,  #1dbebe -5.91%, #4A2FBD 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
